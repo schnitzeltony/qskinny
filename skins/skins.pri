@@ -5,6 +5,10 @@ QSK_OUT_ROOT = $${OUT_PWD}/../..
 
 CONFIG         += plugin
 
+# Currently plugins are loaded as libs - to find them they nedd to go to libdir
+target.path    = $${QSK_INSTALL_LIBS}
+INSTALLS       = target
+
 QT += quick
 
 TEMPLATE     = lib

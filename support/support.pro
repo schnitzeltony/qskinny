@@ -7,6 +7,9 @@ include( $${QSK_ROOT}/qskconfig.pri )
 TEMPLATE = lib
 TARGET   = qsktestsupport
 
+target.path    = $${QSK_INSTALL_LIBS}
+INSTALLS       = target
+
 DESTDIR  = $${QSK_OUT_ROOT}/lib
 
 QT += quick 

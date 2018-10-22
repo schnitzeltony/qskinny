@@ -29,6 +29,9 @@ QSK_SUBDIRS = common graphic nodes controls layouts dialogs inputpanel
 INCLUDEPATH *= $${QSK_SUBDIRS}
 DEPENDPATH *= $${QSK_SUBDIRS}
 
+target.path    = $${QSK_INSTALL_LIBS}
+INSTALLS       = target
+
 HEADERS += \
     common/QskAspect.h \
     common/QskBoxBorderColors.h \
@@ -315,3 +318,6 @@ SOURCES += \
     inputpanel/QskInputPredictionBar.cpp \
     inputpanel/QskVirtualKeyboard.cpp
 
+header_files.files = $$HEADERS
+header_files.path = $${QSK_INSTALL_HEADERS}
+INSTALLS += header_files

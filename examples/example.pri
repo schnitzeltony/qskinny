@@ -7,6 +7,9 @@ QT += quick
 
 TEMPLATE     = app
 
+target.path    = $${QSK_INSTALL_BINS}
+INSTALLS       = target
+
 QSK_DIRS = \
     $${QSK_ROOT}/src/common \
     $${QSK_ROOT}/src/nodes \

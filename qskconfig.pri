@@ -16,6 +16,17 @@ RCC_DIR      = rcc
 
 QSK_CONFIG += QskDll
 
+######################################################################
+# Default install paths
+######################################################################
+
+QSK_INSTALL_PREFIX    = $$[QT_INSTALL_PREFIX]
+QSK_INSTALL_DOCS      = $$[QT_INSTALL_DOCS]
+QSK_INSTALL_HEADERS   = $$[QT_INSTALL_HEADERS]
+QSK_INSTALL_LIBS      = $$[QT_INSTALL_LIBS]
+QSK_INSTALL_BINS      = $$[QT_INSTALL_BINS]
+QSK_INSTALL_PLUGINS   = $$[QT_INSTALL_PLUGINS]
+
 *-g++* {
 
     GCC_VERSION = $$system("$$QMAKE_CXX -dumpversion")
